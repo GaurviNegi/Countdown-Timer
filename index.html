@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!--audio-->  
+<audio id="myAudio">
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+    <div class="countdown-container">
+      <h1>Countdown Timer</h1>
+
+      <div class="input-group">
+        <label for="target-date">Select Date and Time:</label>
+        <input type="datetime-local" id="target-date" />
+      </div>
+
+      <div class="button-group">
+        <button id="start-countdown">Start Countdown</button>
+        <button id="pause-countdown" disabled>Pause Countdown</button>
+        <button id="cancel-countdown" disabled>Cancel Countdown</button>
+        <button id="resume-countdown" disabled>Resume Countdown</button>
+      </div>
+
+      <div id="disp-message">
+        <h3 id="message"></h3> 
+        <div id="timer-display">
+        <span id="days" data-label="Days">00</span>
+        <span id="hours" data-label="Hours">00</span>
+        <span id="minutes" data-label="Minutes">00</span>
+        <span id="seconds" data-label="Seconds">00</span>
+      </div>
+    </div>
+     
+    </div>
+    <footer>Created by Gaurvi Negi</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
